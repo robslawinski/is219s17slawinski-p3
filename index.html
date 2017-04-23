@@ -41,8 +41,8 @@
         <div ng-repeat="movie in movies" class="col-md-6"> 
             <div class="thumbnail">
 
-					<img class="poster" src="{{movie.posters[0]}}"/>
-					<div class="imageInfo"> {{movie.posterIndex}} </div>
+					<img class="poster" ng-click="posterClick($index)" src="{{movie.posters[movie.posterindex]}}"/>
+					<div class="imageInfo"> {{movie.posterindex}} </div>
 			
 					
 					<p class="title">{{movie.title}}({{movie.country}})</p> 

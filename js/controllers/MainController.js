@@ -97,11 +97,20 @@ app.controller('MainController', ['$scope',
 	
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
-	$scope.like = function(index){
+	$scope.like = function(index)
+	{
      $scope.movies[index].likes +=1;
-   };
-   $scope.dislike = function(index){
-     $scope.movies[index].dislikes +=1;
-   };
+	};
+	$scope.dislike = function(index)
+	{
+	 $scope.movies[index].dislikes +=1;
+	};
+   
+	$scope.posterClick = function(index){
+	   $scope.movies[index].posterindex+=1;
+	   if($scope.movies[index].posterindex >= $scope.movies[index].posters.length){
+		  $scope.movies[index].posterindex = 0;
+	   }
+	};
 	
 }]);
