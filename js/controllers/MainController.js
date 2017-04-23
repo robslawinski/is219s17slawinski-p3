@@ -93,6 +93,48 @@ app.controller('MainController', ['$scope',
       dislikes:	101,
       posterindex: 0
 	},
+	{
+	  title:	'Akira', 
+      iscore:	8.1,
+      rating:	'R',
+      runtime:	124,
+      released:	new Date('1988', '06', '16'),
+      country:	'Japan',
+      posters:	['img/akira.jpg','img/akira2.jpg'],
+      imdb:		'http://www.imdb.com/title/tt0094625/',
+      website:	'https://www.bandaivisual.co.jp/akira/',
+      likes:	999,
+      dislikes:	101,
+      posterindex: 0
+	},
+	{
+	  title:	'Blade Runner', 
+      iscore:	8.2,
+      rating:	'R',
+      runtime:	117,
+      released:	new Date('1982', '05', '25'),
+      country:	'USA',
+      posters:	['img/bladerunner.jpg','img/bladerunner2.jpg'],
+      imdb:		'http://www.imdb.com/title/tt0083658/',
+      website:	'https://www.warnerbros.com/blade-runner',
+      likes:	1000,
+      dislikes:	200,
+      posterindex: 0
+	},
+	{
+	  title:	'Toy Story', 
+      iscore:	8.3,
+      rating:	'G',
+      runtime:	81,
+      released:	new Date('1995', '10', '22'),
+      country:	'USA',
+      posters:	['img/toystory.jpg','img/toystory2.jpg'],
+      imdb:		'http://www.imdb.com/title/tt0114709/',
+      website:	'http://toystory.disney.com/',
+      likes:	113,
+      dislikes:	65,
+      posterindex: 0
+	}
 ]
 	
 	
