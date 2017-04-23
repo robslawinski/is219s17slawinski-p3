@@ -84,7 +84,7 @@ app.controller('MainController', ['$scope',
       iscore:	8.9,
       rating:	'R',
       runtime:	195,
-      released:	new Date('1993', '11', '30'),
+      released:	new Date('1993', '10', '30'),
       country:	'USA',
       posters:	['img/schindlerslist.jpg'],
       imdb:		'http://www.imdb.com/title/tt0108052',
@@ -97,6 +97,11 @@ app.controller('MainController', ['$scope',
 	
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
-		
+	$scope.like = function(index){
+     $scope.movies[index].likes +=1;
+   };
+   $scope.dislike = function(index){
+     $scope.movies[index].dislikes +=1;
+   };
 	
 }]);
