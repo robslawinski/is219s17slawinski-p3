@@ -113,4 +113,12 @@ app.controller('MainController', ['$scope',
 	   }
 	};
 	
+	$scope.timeText = function(minutes){
+		var hours = Math.floor(minutes / 60);
+		var min = minutes % 60;
+		console.log(hours + "h " + min + "m");
+		var time =  hours + "h " + min + "m";
+		return time;
+	}
+	
 }]);
